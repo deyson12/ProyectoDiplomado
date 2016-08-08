@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Level Doctors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @level_doctors.each do |level_doctor| %>
+      <tr>
+        <td><%= level_doctor.name %></td>
+        <td><%= level_doctor.description %></td>
+        <td><%= link_to 'Show', level_doctor %></td>
+        <td><%= link_to 'Edit', edit_level_doctor_path(level_doctor) %></td>
+        <td><%= link_to 'Destroy', level_doctor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Level Doctor', new_level_doctor_path %>

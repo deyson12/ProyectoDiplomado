@@ -1,0 +1,1 @@
+json.array! @level_doctors, partial: 'level_doctors/level_doctor', as: :level_doctor

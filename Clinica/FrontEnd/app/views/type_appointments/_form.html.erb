@@ -1,0 +1,32 @@
+<%= form_for(type_appointment) do |f| %>
+  <% if type_appointment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(type_appointment.errors.count, "error") %> prohibited this type_appointment from being saved:</h2>
+
+      <ul>
+      <% type_appointment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :codigo %>
+    <%= f.text_field :codigo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :priority %>
+    <%= f.number_field :priority %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

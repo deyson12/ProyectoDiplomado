@@ -1,0 +1,16 @@
+<%= form_for @session, url: login_path do |f| %>
+	<div class="modal-dialog">
+				<div class="loginmodal-container">
+					<h1>Login to Your Account</h1><br>
+				  <form>
+					<%= f.text_field :user_name, class: 'form-control', placeholder:'Usuario o Email'%>
+					<%= f.password_field :password, class: 'form-control',  placeholder:'Contraseña'%>
+					<%= f.submit 'Entrar', class: 'btn btn-primary' %>
+				  </form>
+					
+				  <div class="login-help">
+					<a href="#">Register</a> - <a href="#">Forgot Password</a>
+				  </div>
+				</div>
+			</div>
+			<% end %>

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Type Appointments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codigo</th>
+      <th>Description</th>
+      <th>Priority</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @type_appointments.each do |type_appointment| %>
+      <tr>
+        <td><%= type_appointment.codigo %></td>
+        <td><%= type_appointment.description %></td>
+        <td><%= type_appointment.priority %></td>
+        <td><%= link_to 'Show', type_appointment %></td>
+        <td><%= link_to 'Edit', edit_type_appointment_path(type_appointment) %></td>
+        <td><%= link_to 'Destroy', type_appointment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Type Appointment', new_type_appointment_path %>

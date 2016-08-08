@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @type_appointment.codigo %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @type_appointment.description %>
+</p>
+
+<p>
+  <strong>Priority:</strong>
+  <%= @type_appointment.priority %>
+</p>
+
+<%= link_to 'Edit', edit_type_appointment_path(@type_appointment) %> |
+<%= link_to 'Back', type_appointments_path %>

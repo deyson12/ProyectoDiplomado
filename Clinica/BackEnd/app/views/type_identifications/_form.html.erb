@@ -1,0 +1,27 @@
+<%= form_for(type_identification) do |f| %>
+  <% if type_identification.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(type_identification.errors.count, "error") %> prohibited this type_identification from being saved:</h2>
+
+      <ul>
+      <% type_identification.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :codigo %>
+    <%= f.text_field :codigo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

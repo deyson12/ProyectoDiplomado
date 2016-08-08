@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @type_identification.codigo %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @type_identification.description %>
+</p>
+
+<%= link_to 'Edit', edit_type_identification_path(@type_identification) %> |
+<%= link_to 'Back', type_identifications_path %>

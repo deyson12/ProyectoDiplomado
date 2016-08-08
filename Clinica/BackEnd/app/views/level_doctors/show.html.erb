@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @level_doctor.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @level_doctor.description %>
+</p>
+
+<%= link_to 'Edit', edit_level_doctor_path(@level_doctor) %> |
+<%= link_to 'Back', level_doctors_path %>

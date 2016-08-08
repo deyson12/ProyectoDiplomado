@@ -1,0 +1,1 @@
+json.partial! "level_doctors/level_doctor", level_doctor: @level_doctor

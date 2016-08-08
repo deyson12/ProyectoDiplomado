@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type_appointment: one
+  description: MyText
+  user: one
+  doctor: one
+  estate: one
+  date: 2016-08-01
+
+two:
+  type_appointment: two
+  description: MyText
+  user: two
+  doctor: two
+  estate: two
+  date: 2016-08-01

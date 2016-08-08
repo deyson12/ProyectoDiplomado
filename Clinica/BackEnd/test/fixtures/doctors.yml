@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  last_name: MyString
+  level_doctor: 
+  estate: one
+  admission_date: 2016-08-01
+  clinic: one
+
+two:
+  name: MyString
+  last_name: MyString
+  level_doctor: 
+  estate: two
+  admission_date: 2016-08-01
+  clinic: two

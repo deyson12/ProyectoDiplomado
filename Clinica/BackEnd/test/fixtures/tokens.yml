@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  token: MyString
+  number_of_request: 1
+  name: MyString
+  estate: one
+
+two:
+  token: MyString
+  number_of_request: 1
+  name: MyString
+  estate: two

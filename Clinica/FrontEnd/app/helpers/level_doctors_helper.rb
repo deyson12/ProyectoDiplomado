@@ -1,0 +1,2 @@
+module LevelDoctorsHelper
+end

@@ -1,0 +1,1 @@
+json.partial! "type_appointments/type_appointment", type_appointment: @type_appointment
